@@ -1,0 +1,51 @@
+Name:
+Counter-Strike 2 [Limited Test Build]
+System requirements:
+CPU: 2,4 Ghz Intel Core 2 Duo E6600 / AMD Phenom X3 8750
+RAM : 4gb
+GPU: 256 MB NVIDIA GeForce 7600 GT / ATI Radeon X1800 with support directx 9.0 and shader 3.0
+HDD: 19 GB
+Info:
+Year of release: 23 Mar. 2023
+Genre: Action
+Developer: Valve Software
+Publisher: Valve Software
+Platform: Windows
+Version: 1.38.6.2 - Limited Test Build
+Publication type: Unofficial
+Release: Portable
+Interface language: Russian, English, MULTI
+Voice language: English
+online:
+1. We put a separate Steam client.
+2. We register or enter from the left account.
+3. Add CS:GO to your account.
+4. From the online_fix folder Replace the files in the game folder.
+5. Run CS2 via Start Game.bat
+6. Connect to the server via the console (enabled in the game settings, ~ button)
+offline:
+If you want offline with bots without Steam, then from the offline_fix folder Replace the files in the game folder.
+Servers for online: 
+PUBLIC
+connect 62.122.214.66:27015
+connect 62.122.214.66:27016
+connect 62.122.214.66:27017
+connect 62.122.214.66:27018
+connect 62.122.214.66:27019
+connect 62.122.214.66:27020
+connect 62.122.214.66:27021
+connect 62.122.214.66:27022
+connect 62.122.214.66:27023
+connect 62.122.214.66:27024
+connect 62.122.214.66:27026
+5х5
+connect 62.122.214.66:27027
+connect 62.122.214.66:27028
+connect 62.122.214.66:27029
+connect 62.122.214.66:27030
+connect 5.9.66.207:27015
+connect 5.9.66.207:27016
+connect 5.9.66.207:27017
+connect 5.9.66.207:27018
+connect 5.9.66.207:27019
+connect 5.9.66.207:27020
