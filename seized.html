@@ -16,40 +16,44 @@
             align-items: center;
             font-family: 'Courier New', Courier, monospace;
             overflow: hidden;
+            position: relative;
         }
         #main-text {
             color: #ff4444;
-            font-size: 4em;
+            font-size: clamp(2em, 4vw, 4em);
             text-align: center;
             text-transform: uppercase;
             animation: glitch 1s infinite;
             background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
+            padding: 1vw;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-top: 2vh;
         }
         #bottom-text {
             color: #ff4444;
-            font-size: 1.2em;
+            font-size: clamp(1em, 2vw, 1.2em);
             text-align: center;
             animation: glitch 1s infinite;
             background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
+            padding: 1vw;
             border-radius: 5px;
-            max-width: 80%;
-            margin-bottom: 20px;
+            max-width: 90%;
+            margin-bottom: 2vh;
         }
         #logos {
             display: flex;
-            gap: 50px;
-            margin-bottom: 20px;
-            margin-right: 200px; /* Сдвиг влево через отступ справа */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: clamp(20px, 5vw, 50px);
+            margin-bottom: 2vh;
+            position: relative;
+            z-index: 1;
         }
-        #logos a {
+        #logos a, #logos .gur-container {
             display: block;
         }
         #logos img {
-            width: 200px;
+            width: clamp(100px, 20vw, 200px);
             height: auto;
             opacity: 0.8;
             transition: opacity 0.3s;
@@ -57,15 +61,16 @@
         #logos img:hover {
             opacity: 1;
         }
+        .gur-container {
+            position: relative;
+        }
         #gur-logo {
-            position: fixed;
-            top: 265px;
-            right: 300px; /* Было 200px, теперь 400px для сдвига влево на 200px */
-            width: 200px;
+            width: clamp(100px, 20vw, 200px);
             height: auto;
             cursor: pointer;
             opacity: 0.8;
             transition: opacity 0.3s;
+			transition: right 0.5s ease;
         }
         #gur-logo:hover {
             opacity: 1;
@@ -73,13 +78,17 @@
         #budanov {
             position: fixed;
             top: 50%;
-            right: -300px; /* Скрыт за правым краем */
-            width: 200px;
+            right: -100%; /* За правым краем экрана */
+            transform: translateY(-50%);
+            width: clamp(100px, 20vw, 200px);
             height: auto;
-            transition: right 0.5s ease;
+            transition: right 0.5s ease; /* Плавный выезд справа */
+            z-index: 0;
         }
-        #gur-logo:hover ~ #budanov {
-            right: 0; /* Выезжает при наведении */
+        .gur-container:hover #budanov {
+            right: 0; /* Выезжает с правого края экрана */
+			transition: right 0.2s ease;
+			opacity 1;
         }
         @keyframes glitch {
             0% { transform: translate(0); }
@@ -88,6 +97,44 @@
             60% { transform: translate(-5px, 0); }
             80% { transform: translate(5px, 0); }
             100% { transform: translate(0); }
+        }
+
+        /* Медиа-запросы только для текста и логотипов */
+        @media (max-width: 768px) {
+            #logos {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gur-container {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        #budanov {
+            position: fixed;
+            top: 50%;
+            right: -100%; /* За правым краем экрана */
+            transform: translateY(-50%);
+            width: clamp(200px, 20vw, 200px);
+            height: auto;
+            transition: right 0.5s ease; /* Плавный выезд справа */
+            z-index: 0;
+			
+			}
+			.gur-container:hover #budanov {
+            right: 0; /* Выезжает с правого края экрана */
+			transition: right 0.2s ease;
+			opacity 1;
+			width: clamp(200px, 20vw, 200px);
+        }
+		
+        @media (max-width: 480px) {
+            #main-text {
+                font-size: clamp(1.5em, 3vw, 2em);
+            }
+            #bottom-text {
+                font-size: clamp(0.8em, 1.5vw, 1em);
+            }
         }
     </style>
 </head>
@@ -103,9 +150,11 @@
         <a href="https://www.mossad.gov.il/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mossad_seal.svg/200px-Mossad_seal.svg.png" alt="Моссад">
         </a>
+        <div class="gur-container">
+            <img id="gur-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Emblem_of_the_Defense_Intelligence_of_Ukraine.png/200px-Emblem_of_the_Defense_Intelligence_of_Ukraine.png" alt="ГУР">
+            <img id="budanov" src="https://i.imgur.com/LokCECm.png" alt="Кирилл Буданов">
+        </div>
     </div>
     <div id="bottom-text">Piracy is a violation of the law that harms authors, developers, and other content creators. It deprives them of income and discourages the creation of new works. In the United States, piracy is strictly regulated by laws such as the Copyright Act of 1976 and the Digital Millennium Copyright Act (DMCA), which protect intellectual property and provide penalties for its infringement.</div>
-    <img id="gur-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Emblem_of_the_Defense_Intelligence_of_Ukraine.png/200px-Emblem_of_the_Defense_Intelligence_of_Ukraine.png" alt="ГУР">
-    <img id="budanov" src="https://i.imgur.com/LokCECm.png" alt="Кирилл Буданов">
 </body>
 </html>
