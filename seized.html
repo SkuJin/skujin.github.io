@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site has been seized</title>
+    <title>Siezed by levasik</title>
     <style>
         body {
             margin: 0;
@@ -43,6 +43,7 @@
             display: flex;
             gap: 50px;
             margin-bottom: 20px;
+            margin-right: 200px; /* Сдвиг влево через отступ справа */
         }
         #logos a {
             display: block;
@@ -56,6 +57,30 @@
         #logos img:hover {
             opacity: 1;
         }
+        #gur-logo {
+            position: fixed;
+            top: 265px;
+            right: 300px; /* Было 200px, теперь 400px для сдвига влево на 200px */
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        #gur-logo:hover {
+            opacity: 1;
+        }
+        #budanov {
+            position: fixed;
+            top: 50%;
+            right: -300px; /* Скрыт за правым краем */
+            width: 200px;
+            height: auto;
+            transition: right 0.5s ease;
+        }
+        #gur-logo:hover ~ #budanov {
+            right: 0; /* Выезжает при наведении */
+        }
         @keyframes glitch {
             0% { transform: translate(0); }
             20% { transform: translate(-5px, 5px); }
@@ -67,7 +92,7 @@
     </style>
 </head>
 <body>
-    <div id="main-text">Site has been seized by Levasik</div>
+    <div id="main-text">Site has been siezed by Levasik</div>
     <div id="logos">
         <a href="https://www.cia.gov" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Seal_of_the_Central_Intelligence_Agency.svg/200px-Seal_of_the_Central_Intelligence_Agency.svg.png" alt="ЦРУ">
@@ -76,9 +101,11 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg/300px-Seal_of_the_Federal_Bureau_of_Investigation.svg.png" alt="ФБИ">
         </a>
         <a href="https://www.mossad.gov.il/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mossad_seal.svg/200px-Mossad_seal.svg.png" alt="ЦРУ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mossad_seal.svg/200px-Mossad_seal.svg.png" alt="Моссад">
         </a>
     </div>
     <div id="bottom-text">Piracy is a violation of the law that harms authors, developers, and other content creators. It deprives them of income and discourages the creation of new works. In the United States, piracy is strictly regulated by laws such as the Copyright Act of 1976 and the Digital Millennium Copyright Act (DMCA), which protect intellectual property and provide penalties for its infringement.</div>
+    <img id="gur-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Emblem_of_the_Defense_Intelligence_of_Ukraine.png/200px-Emblem_of_the_Defense_Intelligence_of_Ukraine.png" alt="ГУР">
+    <img id="budanov" src="https://i.imgur.com/LokCECm.png" alt="Кирилл Буданов">
 </body>
 </html>
