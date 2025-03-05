@@ -73,6 +73,7 @@
         }
         #gur-logo:hover {
             opacity: 1;
+            transition: right 0.5s ease
         }
         #budanov {
             position: fixed;
@@ -103,7 +104,8 @@
                 align-items: center;
             }
             .gur-container {
-                width: 100%;
+                width: clamp(100px, 20vw, 200px);
+                transition: right 0.5s ease
                 text-align: center;
             }
         }
