@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 50px;
+        }
+        .loader {
+            font-size: 24px;
+        }
+        .hidden {
+            display: none;
+        }
+        .start-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="start-button" id="startButton">Jailbreak</button>
+    <img src="https://i.pinimg.com/736x/72/72/a2/7272a221c4601a87b414dd4bdd589e4b.jpg" alt="Apple Logo" class="logo hidden" id="appleLogo">
+    <img src="https://i.pinimg.com/736x/49/7f/b9/497fb9218372145be231874b50ec57f8.jpg" alt="Samsung Logo" class="logo hidden" id="samsungLogo">
+    <div class="loader hidden" id="loader"></div>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const appleLogo = document.getElementById('appleLogo');
+        const samsungLogo = document.getElementById('samsungLogo');
+        const loader = document.getElementById('loader');
+
+        startButton.addEventListener('click', () => {
+            // Request fullscreen on user interaction
+            document.documentElement.requestFullscreen().then(() => {
+                // Hide button and show Apple logo only
+                startButton.classList.add('hidden');
+                appleLogo.classList.remove('hidden');
+
+                // Show Samsung logo and text after 3 seconds
+                setTimeout(() => {
+                    appleLogo.classList.add('hidden');
+                    samsungLogo.classList.remove('hidden');
+                    loader.classList.remove('hidden');
+                    
+                    // Redirect to Samsung site after another 2 seconds
+                    setTimeout(() => {
+                        window.location.href = 'https://ru.trygalaxy.com/?redirect=false';
+                    }, 2000);
+                }, 6000);
+            }).catch(err => {
+                console.error('Fullscreen request failed:', err);
+                // Proceed without fullscreen as fallback
+                startButton.classList.add('hidden');
+                appleLogo.classList.remove('hidden');
+
+                setTimeout(() => {
+                    appleLogo.classList.add('hidden');
+                    samsungLogo.classList.remove('hidden');
+                    loader.classList.remove('hidden');
+                    setTimeout(() => {
+                        window.location.href = 'https://ru.trygalaxy.com/?redirect=false';
+                    }, 2000);
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
