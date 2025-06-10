@@ -51,7 +51,6 @@ def generate_random_string(length=8):
 def replace_letters(text):
     replacements = {
         'F': ['ph', 'ƒ'],
-        'C': ['K', '¢'],
         'K': ['X', 'k'],
         'N': ['И', 'И']
     }
