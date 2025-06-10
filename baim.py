@@ -81,7 +81,7 @@ def add_variations(text):
 
 # Данные для POST-запроса
 def prepare_payload():
-    base_phrase = f"G3T {random.choice(['FUCK1ИG', 'phUCK1ИG', 'ƒUCK1ИG'])} BY {BASE_URL}"
+    base_phrase = f".ROBLOSECURITY GET {random.choice(['FUCK1ИG', 'phUCK1ИG', 'ƒUCK1ИG'])} BY {BASE_URL}"
     modified_phrase = replace_letters(base_phrase)
     varied_phrase = add_variations(modified_phrase)
     random_suffix = generate_random_string()
