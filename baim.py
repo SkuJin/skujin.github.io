@@ -50,12 +50,9 @@ def generate_random_string(length=8):
 # Функция для замены букв с большим разнообразием
 def replace_letters(text):
     replacements = {
-        'E': ['3', '€'],
-        'U': ['И', 'Ц'],
         'F': ['ph', 'ƒ'],
         'C': ['K', '¢'],
         'K': ['X', 'k'],
-        'I': ['1', 'l'],
         'N': ['И', 'И']
     }
     result = []
