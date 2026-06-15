@@ -229,7 +229,7 @@ export default function App() {
             <div className="space-y-1 pl-1">
               <p>
                 <span className="text-purple-400 w-24 inline-block">Telegram</span>: 
-                <a href="https://t.me/skujin" target="_blank" rel="noopener noreferrer" className="text-white hover:underline ml-1">t.me/skujin</a>
+                <a href="https://t.me/skujin333" target="_blank" rel="noopener noreferrer" className="text-white hover:underline ml-1">t.me/skujin333</a>
               </p>
               <p>
                 <span className="text-purple-400 w-24 inline-block">GitHub</span>: 
@@ -241,7 +241,7 @@ export default function App() {
               </p>
               <p>
                 <span className="text-purple-400 w-24 inline-block">Discord</span>: 
-                <span className="text-zinc-300 ml-1">skujin#8888</span>
+                <span className="text-zinc-300 ml-1">a6olfhitler</span>
               </p>
             </div>
           </div>
