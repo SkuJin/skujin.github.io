@@ -27,7 +27,6 @@ const BOOT_LOGS = [
   { text: '[    1.423533] starting host status checks: system-ip online', delay: 110 },
   { text: '[    1.602102] skujin-auth-layer: loading root permissions... [OK]', delay: 130 },
   { text: '[    1.834011] loading environment modules: .env decrypted', delay: 100 },
-  { text: '[    2.000000] CzechRepublic/Prague region coordinates set.', delay: 120 },
   { text: '[    2.150491] Loading portfolio dependencies (TypeScript/React)...', delay: 160 },
   { text: '==================================================', delay: 50 },
   { text: 'Welcome to skujin v2.06 LTS (linux-x86_64)', delay: 100 },
@@ -190,7 +189,7 @@ export default function App() {
               </div>
             </div>
             <div className="space-y-1">
-              <p className="text-emerald-400 font-bold">skujin@CzechRepublic</p>
+              <p className="text-emerald-400 font-bold">skujin@localhostc</p>
               <p className="text-[#52525b]">-------------------------</p>
               <p><span className="text-purple-400">Host</span>: Custom Cloud Run Instance</p>
               <p><span className="text-purple-400">Kernel</span>: 6.2.3-skujin LTS x86_64</p>
@@ -199,7 +198,7 @@ export default function App() {
               <p><span className="text-purple-400">Resolution</span>: Responsive viewport</p>
               <p><span className="text-purple-400">CPU</span>: AMD Ryzen 5 2500X (4) @ 3.500GHz</p>
               <p><span className="text-purple-400">GPU</span>: NVIDIA GeForce GTX 1060 6GB</p>
-              <p><span className="text-purple-400">Memory</span>: 2471MiB / 16384MiB (15%)</p>
+              <p><span className="text-purple-400">Memory</span>: 2471MiB / 32768MiB (8%)</p>
               <p><span className="text-purple-400">Palette</span>: <span className="bg-red-500 px-1 inline-block"> </span><span className="bg-green-500 px-1 inline-block"> </span><span className="bg-yellow-500 px-1 inline-block"> </span><span className="bg-blue-500 px-1 inline-block"> </span><span className="bg-purple-500 px-1 inline-block"> </span><span className="bg-teal-500 px-1 inline-block"> </span></p>
             </div>
           </div>
@@ -320,7 +319,7 @@ export default function App() {
               <div className="w-2.5 h-2.5 rounded-full bg-zinc-800" />
               <div className="w-2.5 h-2.5 rounded-full bg-zinc-800" />
               <div className="w-2.5 h-2.5 rounded-full bg-zinc-800" />
-              <span className="text-[11px] font-mono text-zinc-500 ml-2">skujin@CzechRepublic: ~</span>
+              <span className="text-[11px] font-mono text-zinc-500 ml-2">skujin@localhost: ~</span>
             </div>
             
             <div className="flex items-center gap-3">
@@ -407,7 +406,7 @@ export default function App() {
 
       {/* Discreet Footer Trademark branding */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-mono text-zinc-700 select-none pointer-events-none">
-        Czechia // skujin.terminal
+        ??? // skujin.github.io
       </div>
 
     </div>
