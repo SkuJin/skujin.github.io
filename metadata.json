@@ -1,0 +1,6 @@
+{
+  "name": "Bio Link Website Builder",
+  "description": "An interactive, premium Link-in-Bio website creator with live mobile previews, beautiful custom themes, social media grids, and rich interactive widgets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
