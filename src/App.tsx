@@ -212,10 +212,10 @@ export default function App() {
               [ PROFILE_QUERY: skujin ]
             </p>
             <p className="leading-relaxed">
-              Based in Prague, CZ. I focus heavily on writing minimalist, high-fidelity systems, beautiful client interactions, clean responsive design modules, and fluid browser components.
+             Writing something. 
             </p>
             <p className="leading-relaxed">
-              I hate cluttered setups with slow telemetry, ads, and bloated wrappers. My goal is always to deliver an immediate, tactile sense of performance, lightweight layout, and optimized user flows.
+              hate ads, bloated software and etc.
             </p>
           </div>
         );
