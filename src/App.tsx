@@ -196,7 +196,7 @@ export default function App() {
               <p><span className="text-purple-400">Uptime</span>: 2 mins, 44 secs</p>
               <p><span className="text-purple-400">Shell</span>: Custom React Terminal Emulator</p>
               <p><span className="text-purple-400">Resolution</span>: Responsive viewport</p>
-              <p><span className="text-purple-400">CPU</span>: AMD Ryzen 5 3600 (4) @ 3.600GHz</p>
+              <p><span className="text-purple-400">CPU</span>: AMD Ryzen 5 3600 (6) @ 3.600GHz</p>
               <p><span className="text-purple-400">GPU</span>: NVIDIA GeForce GTX 1080 8GB</p>
               <p><span className="text-purple-400">Memory</span>: 2471MiB / 32768MiB (8%)</p>
               <p><span className="text-purple-400">Palette</span>: <span className="bg-red-500 px-1 inline-block"> </span><span className="bg-green-500 px-1 inline-block"> </span><span className="bg-yellow-500 px-1 inline-block"> </span><span className="bg-blue-500 px-1 inline-block"> </span><span className="bg-purple-500 px-1 inline-block"> </span><span className="bg-teal-500 px-1 inline-block"> </span></p>
