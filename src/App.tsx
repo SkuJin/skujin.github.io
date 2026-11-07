@@ -13,9 +13,9 @@ import {
 const BOOT_LOGS = [
   { text: 'initializing GRUB bootloader...', delay: 100 },
   { text: '[    0.000000] Linux version 6.2.3-skujin (gcc version 12.2.0)', delay: 150 },
-  { text: '[    0.000000] CPU0: AMD Ryzen 5 2500X (4 Cores / 8 Threads)', delay: 100 },
+  { text: '[    0.000000] CPU0: AMD Ryzen 5 3600 (6 Cores / 12 Threads)', delay: 100 },
   { text: '[    0.024102] Core temperature monitoring active', delay: 80 },
-  { text: '[    0.035412] BIOS-provided physical RAM map: 16384MB system memory', delay: 100 },
+  { text: '[    0.035412] BIOS-provided physical RAM map: 32186MB system memory', delay: 100 },
   { text: '[    0.120542] ACPI: Core revision 20260614', delay: 70 },
   { text: '[    0.340012] SCSI subsystem initialized', delay: 90 },
   { text: '[    0.412401] USB controller protocol setup [OK]', delay: 110 },
@@ -192,12 +192,12 @@ export default function App() {
               <p className="text-emerald-400 font-bold">skujin@localhostc</p>
               <p className="text-[#52525b]">-------------------------</p>
               <p><span className="text-purple-400">Host</span>: Custom Cloud Run Instance</p>
-              <p><span className="text-purple-400">Kernel</span>: 6.2.3-skujin LTS x86_64</p>
+              <p><span className="text-purple-400">Kernel</span>: Windows 10 64x 22H2 </p>
               <p><span className="text-purple-400">Uptime</span>: 2 mins, 44 secs</p>
               <p><span className="text-purple-400">Shell</span>: Custom React Terminal Emulator</p>
               <p><span className="text-purple-400">Resolution</span>: Responsive viewport</p>
-              <p><span className="text-purple-400">CPU</span>: AMD Ryzen 5 2500X (4) @ 3.500GHz</p>
-              <p><span className="text-purple-400">GPU</span>: NVIDIA GeForce GTX 1060 6GB</p>
+              <p><span className="text-purple-400">CPU</span>: AMD Ryzen 5 3600 (4) @ 3.600GHz</p>
+              <p><span className="text-purple-400">GPU</span>: NVIDIA GeForce GTX 1080 8GB</p>
               <p><span className="text-purple-400">Memory</span>: 2471MiB / 32768MiB (8%)</p>
               <p><span className="text-purple-400">Palette</span>: <span className="bg-red-500 px-1 inline-block"> </span><span className="bg-green-500 px-1 inline-block"> </span><span className="bg-yellow-500 px-1 inline-block"> </span><span className="bg-blue-500 px-1 inline-block"> </span><span className="bg-purple-500 px-1 inline-block"> </span><span className="bg-teal-500 px-1 inline-block"> </span></p>
             </div>
